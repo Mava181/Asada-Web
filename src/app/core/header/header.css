@@ -1,0 +1,48 @@
+.header-toolbar {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 10;
+
+  
+
+  .spacer {
+    flex: 1 1 auto;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+
+    a[mat-button] {
+      color: #fff;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+
+      &.active {
+        background-color: #00A896;
+      }
+
+      &:hover {
+        background-color: #40E0D0;
+      }
+    }
+  }
+
+  .mobile-menu-button {
+    display: none;
+    color: #fff;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; 
+  }
+
+  .mobile-menu-button {
+    display: inline-flex; 
+  }
+}
