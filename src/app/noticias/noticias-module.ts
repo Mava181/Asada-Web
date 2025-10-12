@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { NoticiasRoutingModule } from './noticias-routing-module';
 import { Noticias } from './noticias/noticias';
+import { MatCard, MatCardContent } from '@angular/material/card';
 
 
 @NgModule({
@@ -11,7 +12,9 @@ import { Noticias } from './noticias/noticias';
   ],
   imports: [
     CommonModule,
-    NoticiasRoutingModule
+    NoticiasRoutingModule,
+    MatCard,
+    MatCardContent
   ]
 })
 export class NoticiasModule { }

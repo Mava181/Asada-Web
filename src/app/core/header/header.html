@@ -3,17 +3,15 @@
     mat-icon-button
     [matMenuTriggerFor]="menuMain"
     class="mobile-menu-button"
+    aria-label="Abrir menú"
   >
     <mat-icon>menu</mat-icon>
   </button>
 
-  <!-- <div class="logo-container">
+  <div class="logo-container">
     <img class="logo" src="images/sinfondo.png" alt="Logo Asada" />
-  </div> -->
-
-  <div>
-    <p>ASADA Calle Chavarría y Calle Vargas</p>
   </div>
+
   <span class="spacer"></span>
 
   <nav class="nav-links">
@@ -21,7 +19,7 @@
     <a mat-button [routerLink]="['/acercade']">Nosotros</a>
     <a mat-button routerLink="/servicios">Servicios</a>
     <a mat-button [routerLink]="['/noticias']">Noticias</a>
-    <a mat-button routerLink="/tips">Tips</a>
+    <a mat-button routerLink="/consejos">Consejos</a>
     <a mat-button [routerLink]="['/contacto']">Contacto</a>
   </nav>
 </mat-toolbar>
@@ -31,6 +29,6 @@
   <button mat-menu-item [routerLink]="['/acercade']">Nosotros</button>
   <button mat-menu-item routerLink="/servicios">Servicios</button>
   <button mat-menu-item [routerLink]="['/noticias']">Noticias</button>
-  <button mat-menu-item routerLink="/tips">Tips</button>
+  <button mat-menu-item routerLink="/consejos">Consejos</button>
   <button mat-menu-item [routerLink]="['/contacto']">Contacto</button>
 </mat-menu>

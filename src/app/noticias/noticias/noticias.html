@@ -1,24 +1,70 @@
 <div class="noticias-container">
-
   <!-- Encabezado -->
   <div class="noticias-header">
     <h1>Noticias y Comunicados</h1>
-    <p>Mantente informado sobre anuncios importantes, fechas de pago y novedades de nuestra ASADA.</p>
+    <p>
+      Mantente informado sobre anuncios importantes, fechas de pago y novedades
+      de nuestra ASADA.
+    </p>
   </div>
 
-
-<section class="noticia-principal">
+  <!-- Sección principal -->
+  <section class="noticia-principal">
+    <div class="noticia-info">
+      <h2>Aviso de Pagos</h2>
+      <p>
+        Les recordamos que las fechas de pago del servicio de agua se realizan
+        la primera semana de cada mes. Puede realizar sus pagos en la oficina,
+        la cuenta bancaria o a través de una transferencia de SINPE Móvil. A
+        continuación, toda la información de nuestros métodos de pago:
+      </p>
+    </div>
     <img
       src="images/pagoServicios.png"
       alt="Aviso de pagos de servicios de agua"
       class="noticia-img"
     />
-    <div class="noticia-info">
-      <h2>Aviso Importante de Pagos</h2>
-      <p>
-        Les recordamos que las fechas de pago del servicio de agua se realizan la primera semana de cada mes. 
-        Puede realizar sus pagos en la oficina, la cuenta bancaria o a través de una transferencia de SINPE Mólvil.
-      </p>
-    </div>
   </section>
-    </div>
+
+ 
+  <h2 class="cards-titulo">Comunicados Importantes</h2>
+
+  <!-- Cards con Angular Material -->
+  <section class="noticias-cards">
+    <mat-card class="noticia-card">
+      <div class="card-img-wrap">
+        <img
+          mat-card-image
+          src="images/cartelFugas.png"
+          alt="Cartel de reporte de fugas"
+        />
+      </div>
+      <mat-card-content class="card-content">
+        <h3>Reporte de Fugas</h3>
+        <p>
+          Si detectas una fuga de agua, avísanos de inmediato. Tu rápida acción
+          puede prevenir daños mayores en la infraestructura y garantizar que el
+          agua llegue a todos de forma continua.
+        </p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="noticia-card">
+      <div class="card-img-wrap">
+        <img
+          mat-card-image
+          src="images/cartelPago.png"
+          alt="Cartel de próximo evento"
+        />
+      </div>
+      <mat-card-content class="card-content">
+        <h3>Pagos Puntuales</h3>
+        <p>
+          Mantén tus pagos al día para asegurar el suministro continuo y el buen
+          mantenimiento de la red de agua. Tu puntualidad nos ayuda a brindar un
+          servicio de calidad a toda la comunidad.
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </section>
+</div>

@@ -9,10 +9,11 @@ import { HomeModule } from './home/home-module';
 import { provideHttpClient } from '@angular/common/http';
 import { NoticiasModule } from './noticias/noticias-module';
 import { ContactoModule } from './contacto/contacto-module';
+import { ConsejosModule } from './consejos/consejos-module';
 
 @NgModule({
   declarations: [
-    App
+    App,
   ],
   imports: [
     BrowserModule,
@@ -22,7 +23,7 @@ import { ContactoModule } from './contacto/contacto-module';
 
     NoticiasModule,
     ContactoModule,
-
+    ConsejosModule,
     AppRoutingModule,
 
   ],
