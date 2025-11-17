@@ -1,0 +1,115 @@
+.servicios-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 3rem 1.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Encabezado */
+.servicios-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.servicios-header h1 {
+  font-size: 2.6rem;
+  color: #0061a3;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.servicios-header p {
+  font-size: 1.1rem;
+  color: #444;
+  max-width: 750px;
+  margin: 0.8rem auto;
+  line-height: 1.7;
+}
+
+/* Lista de servicios */
+.lista-servicios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2.5rem;
+}
+
+/* Card */
+.servicio-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  transition: 0.25s ease;
+}
+
+.servicio-card.activo {
+  background: #f2f9ff;
+  border: 2px solid #00a6d6;
+  box-shadow: 0 14px 28px rgba(0, 160, 210, 0.18);
+}
+
+.servicio-info h2 {
+  color: #0061a3;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.servicio-info p {
+  color: #444;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn-requisitos {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.45rem 1rem;
+  border-radius: 30px;
+  background: #e7f5ff;
+  border: 1px solid #b6e4ff;
+  color: #0061a3;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.25s ease;
+  margin-bottom: 3%;
+}
+
+.btn-requisitos:hover {
+  background: #d8f0ff;
+  border-color: #8ed9ff;
+}
+
+/* Botón formulario (nuevo estilo) */
+.btn-formulario {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.55rem 1.1rem;
+  border-radius: 30px;
+  background: #0061a3;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.btn-formulario:hover {
+  background: #004d82;
+}
+
+.requisitos {
+  margin: 0 0 1rem 0;
+  padding-left: 1.2rem;
+  list-style: disc;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .servicio-card {
+    padding: 1.5rem;
+  }
+}

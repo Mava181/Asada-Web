@@ -1,10 +1,9 @@
 :host {
-  display: block; /* importante para que el host ocupe todo el ancho disponible */
+  display: block; 
   width: 100%;
   box-sizing: border-box;
 }
 
-/* fondo full-bleed aplicado al host/section */
 .hero {
   position: relative;
   width: 100%;
@@ -17,7 +16,6 @@
   box-sizing: border-box;
 
 }
-
 
 .hero-inner {
   max-width: 1200px;   
@@ -70,20 +68,19 @@
 .btn-hero:hover { transform: translateY(-3px); background-color: #003a66; }
 
 
-/* Ajustes de altura para desktop (más aire) */
 @media (min-width: 992px) {
   .hero {
     padding-top: 3.5rem;
     padding-bottom: 4.5rem;
     min-height: 420px;
     display: flex;
-    align-items: center; /* centra verticalmente el .hero-inner */
+    align-items: center; 
   }
 
   .hero-inner { padding: 0 2rem; }
 }
 
-/* pequeños dispositivos */
+/*Responsivo */
 @media (max-width: 420px) {
   .hero { padding-top: 1.6rem; padding-bottom: 2rem; }
   .btn-hero { padding: 0.45rem 1rem; min-width: auto; }

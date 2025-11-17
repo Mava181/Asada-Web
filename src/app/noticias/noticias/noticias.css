@@ -2,7 +2,7 @@
   max-width: 1200px;
   margin: auto;
   padding: 3rem 1.5rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Encabezado */
@@ -16,9 +16,7 @@
   color: #0061a3;
   margin-bottom: 0.8rem;
   font-weight: 600;
-
 }
-
 
 .noticias-header p {
   font-size: 1.2rem;
@@ -30,15 +28,16 @@
 
 /* Noticia principal */
 .noticia-principal {
+  background: #ffffff;
+  border-left: 6px solid #00a6d6;
+  border-radius: 10px;
+  padding: 2.5rem 2rem;
+  margin-bottom: 4rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 3rem;
-  background: #f9fafb;
-  border-radius: 16px;
-  padding: 2.5rem;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
-  margin-bottom: 4rem;
+  gap: 2.5rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
 }
 
 .noticia-info {
@@ -46,8 +45,8 @@
 }
 
 .noticia-info h2 {
-  color: #0061a3;
   font-size: 1.9rem;
+  color: #0061a3;
   font-weight: 600;
   margin-bottom: 1rem;
 }
@@ -56,38 +55,36 @@
   color: #444;
   font-size: 1.05rem;
   line-height: 1.8;
+  text-align: justify;
 }
 
+/* imagen */
 .noticia-img {
-  flex: 1 1 350px;
   width: 100%;
   max-width: 520px;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-  object-fit: contain;
-  overflow: hidden; 
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
-
 /* CARDS */
 .cards-titulo {
   text-align: center;
   color: #0061a3;
   font-size: 2rem;
   font-weight: 600;
-    margin-bottom: 2.5rem;
-
+  margin-bottom: 2.5rem;
 }
 
 .noticias-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2.5rem;
-  justify-items: center; 
+  justify-items: center;
 }
 
 .noticia-card {
   width: 100%;
-  max-width: 400px; 
+  max-width: 400px;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
@@ -113,7 +110,7 @@
 }
 
 .card-content h3 {
-  color: #0061a3;
+  color: #4091c7;
   font-size: 1.4rem;
   margin-bottom: 0.8rem;
   font-weight: 600;
@@ -128,8 +125,8 @@
 .noticia-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* La imagen llenará su contenedor */
-  object-position: center; /* Centra la parte visible */
+  object-fit: cover;
+  object-position: center;
   display: block;
 }
 
@@ -138,20 +135,14 @@
   .noticia-principal {
     flex-direction: column;
     text-align: center;
-    padding: 2rem 1.2rem;
+    padding: 1rem 1rem;
   }
-   .noticia-img {
-    width: 100%;
-    max-width: none; /* Permite que crezca más */
-    height: 280px; /* Puedes ajustar este alto para que se vea bien en móvil */
+  .noticia-img {
+    max-width: 100%;
+    height: 260px;
+    object-fit: contain;
   }
-
-  .noticia-img img {
-    object-fit: cover; /* Llenar el espacio visible */
-    object-position: center;
+  .noticia-info {
+    flex: 1 1 80px;
   }
 }
-
-
-
-

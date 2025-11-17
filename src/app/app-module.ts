@@ -10,6 +10,7 @@ import { provideHttpClient } from '@angular/common/http';
 import { NoticiasModule } from './noticias/noticias-module';
 import { ContactoModule } from './contacto/contacto-module';
 import { ConsejosModule } from './consejos/consejos-module';
+import { ServiciosModule } from './servicios/servicios-module';
 
 @NgModule({
   declarations: [
@@ -18,12 +19,12 @@ import { ConsejosModule } from './consejos/consejos-module';
   imports: [
     BrowserModule,
     CoreModule,
-    ShareModule,
-    HomeModule,
-
     NoticiasModule,
     ContactoModule,
     ConsejosModule,
+    ServiciosModule,
+    HomeModule,
+    ShareModule,
     AppRoutingModule,
 
   ],

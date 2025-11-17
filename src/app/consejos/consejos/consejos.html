@@ -1,25 +1,33 @@
 <div class="consejos-container">
-  <!-- Sección hero -->
-
-   <div class="consejos-header">
+  <!-- Encabezado-->
+  <div class="consejos-header">
     <h1>Cuidemos cada gota</h1>
     <p>
-        El agua es fuente de vida. Con acciones pequeñas podemos lograr un impacto enorme en su conservación.  
-        ¡Súmate al cambio!
-      </p>
+      El agua es fuente de vida. Con acciones pequeñas podemos lograr un impacto enorme en su conservación.  
+      ¡Súmate al cambio!
+    </p>
   </div>
-  <!-- <section class="consejos-hero">
-    <div class="hero-text">
-      <h1>Cuidemos cada gota</h1>
-      <p>
-        El agua es fuente de vida. Con acciones pequeñas podemos lograr un impacto enorme en su conservación.  
-        ¡Súmate al cambio!
-      </p>
-    </div>
-    <div class="hero-img">
-      <img src="images/cuidadoAguaPrincipal.jpg" alt="Cuidar el agua" />
-    </div>
-  </section> -->
+
+  <!--Importancia del agua -->
+  <section class="importancia-agua">
+    <h2>La importancia de cuidar el agua</h2>
+    <p>
+      El agua está presente en todos los aspectos de nuestra vida: desde el alimento que consumimos 
+      hasta la energía que utilizamos. Sin embargo, la contaminación, el desperdicio y el cambio climático 
+      están reduciendo su disponibilidad. Protegerla no es solo una acción ambiental, 
+      sino también una responsabilidad social y económica.
+    </p>
+   <p>
+    Cuidar el agua no solo significa usar menos, sino usarla de forma inteligente. 
+    Pequeñas acciones diarias, como reparar una fuga o reutilizar el agua de lluvia, 
+    pueden marcar una gran diferencia a largo plazo. 
+  </p>
+  <p>
+    En nuestras comunidades, cada gota cuenta. Promover una cultura de ahorro y respeto 
+    por el agua garantiza que las generaciones futuras también puedan disfrutar de este recurso esencial. 
+    Cuidarla es cuidar la vida misma.
+  </p>
+  </section>
 
   <!-- Lista de consejos -->
   <section class="lista-consejos">
@@ -27,84 +35,57 @@
 
     <ul>
       <li>
-        <mat-icon>water_drop</mat-icon>
-        <div>
+        <div class="icon-circle"><mat-icon>water_drop</mat-icon></div>
+        <div class="consejo-body">
           <h3>Reduce el tiempo en la ducha</h3>
           <p>Una ducha de 5 minutos consume hasta un 40% menos agua que una de 10 minutos.</p>
         </div>
       </li>
 
       <li>
-        <mat-icon>build_circle</mat-icon>
-        <div>
+        <div class="icon-circle"><mat-icon>build_circle</mat-icon></div>
+        <div class="consejo-body">
           <h3>Revisa fugas y llaves</h3>
           <p>Una fuga pequeña puede desperdiciar más de 100 litros al día. Detectarlas a tiempo evita pérdidas y gastos.</p>
         </div>
       </li>
 
       <li>
-        <mat-icon>eco</mat-icon>
-        <div>
-          <h3>Usa baldes en lugar de mangueras</h3>
-          <p>Al lavar el carro o los pisos, usar un balde ahorra hasta 200 litros por lavado.</p>
-        </div>
-      </li>
+  <div class="icon-circle"><mat-icon>grass</mat-icon></div>
+  <div class="consejo-body">
+    <h3>Riega tu jardín por la mañana o al atardecer</h3>
+    <p>Evitar las horas de sol directo reduce la evaporación, aprovechando mejor cada litro de agua.</p>
+  </div>
+</li>
 
-      <li>
-        <mat-icon>recycling</mat-icon>
-        <div>
-          <h3>Reutiliza el agua</h3>
-          <p>Aprovecha el agua de lluvia o el agua usada para lavar frutas en el riego de plantas.</p>
-        </div>
-      </li>
+<li>
+  <div class="icon-circle"><mat-icon>bolt</mat-icon></div>
+  <div class="consejo-body">
+    <h3>Optimiza el uso de electrodomésticos</h3>
+    <p>Lava ropa o platos únicamente cuando la lavadora o el lavaplatos estén llenos para ahorrar agua.</p>
+  </div>
+</li>
     </ul>
   </section>
 
-  <!-- Cards finales -->
+  <!-- Cards con imágenes-->
   <section class="consejos-cards">
-    <h2>Consejos destacados</h2>
+    <h2>Nuestros consejos</h2>
 
-    <section class="noticias-cards">
-    <mat-card class="noticia-card">
-      <div class="card-img-wrap">
-        <img mat-card-image src="images/sabiasEsto.png" alt="Cerrar el grifo" />
-        </div>
-      <mat-card-content class="card-content">
-        <h3>Reporte de Fugas</h3>
-        <p>
-          Si detectas una fuga de agua, avísanos de inmediato. Tu rápida acción
-          puede prevenir daños mayores en la infraestructura y garantizar que el
-          agua llegue a todos de forma continua.
-        </p>
-      </mat-card-content>
-    </mat-card>
-          <!-- <p>
-            Este simple hábito puede ahorrar más de 10 litros por minuto.  
-            Recuerda: cada acción cuenta.
-          </p> -->
-    
+    <section class="consejoss-cards">
+      <mat-card class="consejo-card">
+        <img mat-card-image src="images/cartelImportancia.png" alt="Reporte de fugas" />
+        <mat-card-content class="card-content">
+          <h3>¿Por qué cuidar el agua?</h3>
+        </mat-card-content>
+      </mat-card>
 
-      
-          <!-- <p>
-            Evita el desperdicio por evaporación. Así aprovechas mejor cada gota y tus plantas lo agradecerán.
-          </p> -->
-      
-
-
-    <mat-card class="noticia-card">
-      <div class="card-img-wrap">
-        <img mat-card-image src="images/cuidarAgua.png" alt="Riego eficiente" />
-      </div>
-      <mat-card-content class="card-content">
-        <h3>Pagos Puntuales</h3>
-        <p>
-          Mantén tus pagos al día para asegurar el suministro continuo y el buen
-          mantenimiento de la red de agua. Tu puntualidad nos ayuda a brindar un
-          servicio de calidad a toda la comunidad.
-        </p>
-      </mat-card-content>
-    </mat-card>
+      <mat-card class="consejo-card">
+        <img mat-card-image src="images/cuidarAgua.png" alt="Pagos puntuales" />
+        <mat-card-content class="card-content">
+          <h3>Cuidado desde el hogar</h3>
+        </mat-card-content>
+      </mat-card>
+    </section>
   </section>
-  </section>
-
 </div>

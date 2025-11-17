@@ -1,0 +1,79 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  padding: 1rem;
+}
+
+.notfound-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.notfound-content {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+  align-items: center;
+  gap: 2rem;
+}
+
+.notfound-img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+
+.notfound-text {
+  flex: 1;
+}
+
+.notfound-text h1 {
+  font-size: 5rem;
+  margin-bottom: 0.5rem;
+  color: #0077b6;
+}
+
+.notfound-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.notfound-text p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.btn-home {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background-color: #0077b6;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-home:hover {
+  background-color: #005f87;
+  transform: scale(1.05);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .notfound-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .notfound-img {
+    max-width: 250px;
+    margin-bottom: 1.5rem;
+  }
+}

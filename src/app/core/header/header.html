@@ -17,9 +17,9 @@
   <nav class="nav-links">
     <a mat-button routerLink="/">Inicio</a>
     <a mat-button [routerLink]="['/acercade']">Nosotros</a>
-    <a mat-button routerLink="/servicios">Servicios</a>
+    <a mat-button [routerLink]="['/servicios']">Servicios</a>
     <a mat-button [routerLink]="['/noticias']">Noticias</a>
-    <a mat-button routerLink="/consejos">Consejos</a>
+    <a mat-button [routerLink]="['/consejos']">Consejos</a>
     <a mat-button [routerLink]="['/contacto']">Contacto</a>
   </nav>
 </mat-toolbar>
@@ -27,8 +27,8 @@
 <mat-menu #menuMain="matMenu">
   <button mat-menu-item routerLink="/">Inicio</button>
   <button mat-menu-item [routerLink]="['/acercade']">Nosotros</button>
-  <button mat-menu-item routerLink="/servicios">Servicios</button>
+  <button mat-menu-item [routerLink]="['/servicios']">Servicios</button>
   <button mat-menu-item [routerLink]="['/noticias']">Noticias</button>
-  <button mat-menu-item routerLink="/consejos">Consejos</button>
+  <button mat-menu-item [routerLink]="['/consejos']">Consejos</button>
   <button mat-menu-item [routerLink]="['/contacto']">Contacto</button>
 </mat-menu>

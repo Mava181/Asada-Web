@@ -1,0 +1,219 @@
+<div class="servicios-container">
+  <div class="servicios-header">
+    <h1>Servicios y Formularios</h1>
+    <p>
+      Accede a los distintos formularios y requisitos para los servicios que
+      ofrece nuestra ASADA.
+    </p>
+  </div>
+
+  <section class="lista-servicios">
+    <div class="servicio-card" [class.activo]="mostrarRequisitos[0]">
+      <div class="servicio-info">
+        <h2>Solicitud de Constancia de Disponibilidad de Servicios</h2>
+        <p>
+          Complete el formulario y además tome en cuenta los siguientes
+          requisitos:
+        </p>
+        <button class="btn-requisitos" (click)="toggleRequisitos(0)">
+          <mat-icon
+            >{{ mostrarRequisitos[0] ? 'expand_less' : 'expand_more'
+            }}</mat-icon
+          >
+          {{ mostrarRequisitos[0] ? 'Ocultar requisitos' : 'Ver requisitos' }}
+        </button>
+
+        <ul class="requisitos" *ngIf="mostrarRequisitos[0]">
+          <li>Fotocopia de la cédula</li>
+          <li>Certificación registral del inmueble</li>
+          <li>Certificación registral del plano catastro</li>
+          <li>
+            Certificaciones registrales o administrativas de personerías
+            jurídicas vigentes, apoderados generales facultados al efecto
+          </li>
+        </ul>
+
+        <a
+          href="https://drive.google.com/file/d/19eHPiTM_1ZZMli7B3gCTzPDzO3DmfgUT/view?usp=sharing"
+          target="_blank"
+          class="btn-formulario"
+        >
+          <mat-icon>description</mat-icon> Abrir Formulario
+        </a>
+      </div>
+    </div>
+
+    <div class="servicio-card" [class.activo]="mostrarRequisitos[1]">
+      <div class="servicio-info">
+        <h2>Solicitud Conexión de Servicio</h2>
+        <p>
+          Complete el formulario y además tome en cuenta los siguientes
+          requisitos:
+        </p>
+        <button class="btn-requisitos" (click)="toggleRequisitos(1)">
+          <mat-icon
+            >{{ mostrarRequisitos[1] ? 'expand_less' : 'expand_more'
+            }}</mat-icon
+          >
+          {{ mostrarRequisitos[1] ? 'Ocultar requisitos' : 'Ver requisitos' }}
+        </button>
+
+        <ul class="requisitos" *ngIf="mostrarRequisitos[1]">
+          <li>Fotocopia de la cédula</li>
+          <li>Certificación registral del inmueble</li>
+          <li>Certificación registral del plano catastro</li>
+          <li>
+            Certificaciones registrales o administrativas de personerías
+            jurídicas vigentes, apoderados generales facultados al efecto
+          </li>
+          <li>Permisos de construcción brindados por la Municipalidad</li>
+        </ul>
+
+        <a href="https://drive.google.com/file/d/18qziV-PRZXU00O_a0-GiQc4HVod1LQ6f/view?usp=sharing" class="btn-formulario">
+          <mat-icon>description</mat-icon> Abrir Formulario
+        </a>
+      </div>
+    </div>
+
+    <div class="servicio-card" [class.activo]="mostrarRequisitos[2]">
+      <div class="servicio-info">
+        <h2>Cambio de Nombre a Solicitud del Usuario</h2>
+        <p>
+          Complete el formulario y además tome en cuenta los siguientes
+          requisitos:
+        </p>
+        <button class="btn-requisitos" (click)="toggleRequisitos(2)">
+          <mat-icon
+            >{{ mostrarRequisitos[2] ? 'expand_less' : 'expand_more'
+            }}</mat-icon
+          >
+          {{ mostrarRequisitos[2] ? 'Ocultar requisitos' : 'Ver requisitos' }}
+        </button>
+
+        <ul class="requisitos" *ngIf="mostrarRequisitos[2]">
+          <li>Fotocopia de la cédula</li>
+          <li>Certificación registral del inmueble</li>
+          <li>Certificación registral del plano catastro</li>
+          <li>
+            Certificaciones registrales o administrativas de personerías
+            jurídicas vigentes, apoderados generales facultados al efecto
+          </li>
+        </ul>
+
+        <a
+          href="https://drive.google.com/file/d/1RzSUuDNlVZ3Klt9moXEDb7YMLKDnr-Q8/view?usp=sharing"
+          target="_blank"
+          class="btn-formulario"
+        >
+          <mat-icon>description</mat-icon> Abrir Formulario
+        </a>
+      </div>
+    </div>
+
+    <div class="servicio-card" [class.activo]="mostrarRequisitos[3]">
+      <div class="servicio-info">
+        <h2>Solicitud Afiliación</h2>
+        <p>
+          Complete el formulario y además tome en cuenta los siguientes
+          requisitos:
+        </p>
+        <button class="btn-requisitos" (click)="toggleRequisitos(3)">
+          <mat-icon
+            >{{ mostrarRequisitos[3] ? 'expand_less' : 'expand_more'
+            }}</mat-icon
+          >
+          {{ mostrarRequisitos[3] ? 'Ocultar requisitos' : 'Ver requisitos' }}
+        </button>
+
+        <ul class="requisitos" *ngIf="mostrarRequisitos[3]">
+          <li>Ser la persona dueña de la propiedad (escritura y plano)</li>
+          <li>Ser la persona dueña de la prevista</li>
+          <li>Tener la documentación del expediente completa</li>
+          <li>No poseer deudas con la ASADA</li>
+          <li>
+            Haber completado la boleta de inscripción (con la firma de dos
+            personas fundadoras de la ASADA) la cual debe ser aprobada por la
+            Junta Directiva
+          </li>
+        </ul>
+
+        <a
+          href="https://drive.google.com/file/d/1853kXWpd0ya6Fi_uWTnhurcjvuATsTwV/view?usp=sharing"
+          target="_blank"
+          class="btn-formulario"
+        >
+          <mat-icon>description</mat-icon> Abrir Formulario
+        </a>
+      </div>
+    </div>
+
+    <div class="servicio-card"  [class.activo]="mostrarRequisitos[4]">
+      <div class="servicio-info">
+        <h2>Solicitud de Constancia de Información General</h2>
+        <p>
+          Complete el formulario y además tome en cuenta los siguientes
+          requisitos:
+        </p>
+        <button class="btn-requisitos" (click)="toggleRequisitos(4)">
+          <mat-icon
+            >{{ mostrarRequisitos[4] ? 'expand_less' : 'expand_more'
+            }}</mat-icon
+          >
+          {{ mostrarRequisitos[4] ? 'Ocultar requisitos' : 'Ver requisitos' }}
+        </button>
+
+        <ul class="requisitos" *ngIf="mostrarRequisitos[4]">
+          <li>Fotocopia de la cédula</li>
+        </ul>
+
+        <a
+          href="https://drive.google.com/file/d/14_dMNG9qLqNNfKjfuESA4MfvsjnKXsUh/view?usp=sharing"
+          target="_blank"
+          class="btn-formulario"
+        >
+          <mat-icon>description</mat-icon> Abrir Formulario
+        </a>
+      </div>
+    </div>
+    <div class="servicio-card"  [class.activo]="mostrarRequisitos[5]">
+      <div class="servicio-info">
+        <h2>Solicitud de Constancia de Servicio Existente</h2>
+        <p>
+          Complete el formulario y además tome en cuenta los siguientes
+          requisitos:
+        </p>
+<button class="btn-requisitos" (click)="toggleRequisitos(5)">
+          <mat-icon>{{ mostrarRequisitos[5] ? 'expand_less' : 'expand_more' }}</mat-icon>
+          {{ mostrarRequisitos[5] ? 'Ocultar requisitos' : 'Ver requisitos' }}
+        </button>
+
+        <ul class="requisitos" *ngIf="mostrarRequisitos[5]">
+          <li>Fotocopia de la cédula</li>
+        </ul>
+
+        <a
+          href="https://drive.google.com/file/d/1auBIwZPp-Z5fPpWL4Rcmz0isrsBQHHIQ/view?usp=sharing"
+          target="_blank"
+          class="btn-formulario"
+        >
+          <mat-icon>description</mat-icon> Abrir Formulario
+        </a>
+      </div>
+    </div>
+
+    <div class="servicio-card" >
+      <div class="servicio-info">
+        <h2>Declaracion Jurada Poseedor Inmueble</h2>
+        <p>Complete el formulario.</p>
+
+        <a
+          href="https://drive.google.com/file/d/1SW2P7i2yfiA3FOqc_lbr2N6oL47KdlVV/view?usp=sharing"
+          target="_blank"
+          class="btn-formulario"
+        >
+          <mat-icon>description</mat-icon> Abrir Formulario
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
